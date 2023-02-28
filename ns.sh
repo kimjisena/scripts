@@ -1,7 +1,7 @@
 #! /usr/bin/bash
 
 main () {
-    if [[ "$1" = '--help' || (-z "$1") ]]; then
+    if [[ ("$1" = '--help') || (-z "$1") ]]; then
         help
     else
         ns $1;
